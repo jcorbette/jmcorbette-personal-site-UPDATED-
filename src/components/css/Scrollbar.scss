@@ -1,0 +1,26 @@
+#scrollbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color:rgb(112,112,112);
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0 0 0 3px rgb(96,96,96);
+    transition: 0.5s;
+}
+    
+
+.dot-2 { 
+    height: 50px;
+    width: 50px;
+    background-color:rgb(184,184,184);
+    box-shadow: 0 0 0 3px rgb(224,224,224);
+    border-radius: 50%;
+    margin: auto;
+    transition: 0.5s;
+}

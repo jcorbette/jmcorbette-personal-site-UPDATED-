@@ -1,0 +1,45 @@
+#footer {
+
+    &-container {
+        background-color: #000000;
+        padding: 10px 10px;
+        display: flex;
+    }
+    
+    &-copyright  {
+        margin: auto;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 1rem;
+        font-family: 'Orbitron', sans-serif;
+        color: rgb(255, 255, 255, 80%);
+    }
+    
+    &-copyright p{
+        margin-bottom: 0;
+    }
+}
+
+#scroll-top {
+    position: absolute;
+    right: 0;
+    margin: 0rem 0rem;
+    margin-right: 1rem;
+    background-color: rgb(255, 255, 255, 80%);
+    border-style: none;
+}
+
+
+@media only screen and (min-width: 1371px) {
+    #footer-container {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 325px) {
+    #footer-copyright {
+        font-size: 0.7rem;
+    }
+}

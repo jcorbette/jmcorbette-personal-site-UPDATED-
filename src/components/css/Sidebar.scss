@@ -1,0 +1,131 @@
+#sidebar {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    overflow-y : hidden;
+    overflow-x : hidden;
+}
+
+
+#links {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 40px;
+    margin: auto;
+}
+
+.fa {
+    font-size: 40px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+  
+.fa:hover {
+      opacity: 0.7;
+}
+
+  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #fafafa;
+    color: #333;
+}
+
+.fa-envelope {
+    background: #fafafa;
+    color: #00A4EF;
+}
+
+#profile-div {
+    display: flex;
+    align-content: center;
+    padding-top: 40px;
+}
+
+#profile-pic {
+    width: 80%;
+    border-radius: 50%;
+    margin: auto;    
+}
+
+#profile-description-div {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.p-description, #copyright{
+    margin: auto;
+    font-family: 'Orbitron', sans-serif;
+    padding: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(255, 255, 255, 80%);
+}
+
+.p-description:nth-child(1) {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+
+
+@media only screen and (max-width: 1370px) {
+    #sidebar {
+        overflow-y: visible;
+        width: 100%;
+        white-space: nowrap
+    }
+    
+    .p-description:nth-child(1) {
+        font-size: 1.5rem;
+    }
+    
+    .p-description:nth-child(2) {
+        display: none;
+    }
+    
+    #profile-pic {
+        height: 100%;
+        width: auto;
+        border-radius: 50%;
+    }
+    
+    #copyright {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 485px) {
+    .p-description:nth-child(1) {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .p-description:nth-child(1) {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .p-description:nth-child(1) {
+        font-size: 0.8rem;
+    }
+    
+    #profile-pic {
+        width: 70%;
+        border-radius: 50%;
+        margin: auto;    
+    }
+}

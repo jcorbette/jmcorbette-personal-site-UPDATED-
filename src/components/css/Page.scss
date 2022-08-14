@@ -1,0 +1,126 @@
+@use "~bootstrap/scss/bootstrap";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+}
+
+#page-container {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow:hidden;
+    background-image: url("../static/img/code background.jpg");
+    background-color: #171717;
+}
+
+#main-container {
+    bottom: 0;
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    flex-shrink: 0;
+}
+
+.general-container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start; 
+}
+
+.sidebar-container {
+    background-color: #000000;
+    position: sticky;
+    display: flex;
+    flex-shrink: 0;
+    top: 0;
+    height: 100vh;
+    width: 15%;
+    z-index: 2;
+}
+
+.scrollbar-container {
+    position: sticky;
+    align-self: flex-end;
+    flex-shrink: 0;
+    top: 30vh;
+    height: 40%;
+    width: 5%;
+    z-index: 2;
+    display: flex;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+
+
+@media only screen and (max-width: 1370px) {
+    
+    * {
+        scroll-behavior: none;
+    }
+    
+    #page-container {
+        top: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y:visible;
+        overflow: visible;
+        background-image: none;
+        scroll-snap-type: none;
+    }
+    
+    .sidebar-container {
+        top: 0;
+        position: relative;
+        height: 500px;
+        width: 75%;
+        margin: auto;
+    }
+    
+    .scrollbar-container {
+        display: none;
+    }
+    
+    #main-container {
+        width: 100%;
+        margin: auto;
+    }    
+ 
+    .general-container {
+        height: fit-content;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../static/img/code background.jpg");
+        scroll-snap-align: none;
+    }
+
+    .general-container:nth-child(2) {
+        background-image: none;
+        background-color: #171717;
+    }
+    
+    
+}
+    
+    
+    
+    
