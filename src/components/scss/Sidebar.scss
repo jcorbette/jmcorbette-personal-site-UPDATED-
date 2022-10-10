@@ -1,0 +1,113 @@
+.sidebar-container-sub {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80vw;
+    padding: 40px 10px;
+    background-color: #555454;
+}
+
+.profile-img {
+    
+    &-div {
+        display: flex;
+        width: 100%;
+    }
+    
+    &-pic {        
+        width: 80%;
+        height: auto;
+        border-radius: 100%;
+        margin: auto;
+    }
+}
+
+.sidebar-description {
+    
+    padding: 25px 0;
+    
+    &-name {
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    &-intro {
+        padding-top: 20px;
+        display: none;
+        text-align: center;
+        font-size: 15px;        
+    }
+}
+
+.links {
+    display: flex;
+    align-self: center;    
+}
+
+.fa {    
+    
+    font-size: 40px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 10px;
+  
+    &:hover {
+        opacity: 0.7;
+    }
+  
+    &-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+    
+    &-github {
+        background: #fafafa;
+        color: #333;
+    }
+
+    &-envelope {
+        background: #fafafa;
+        color: #00A4EF;
+    }
+}
+
+.copyright {
+    display: none;
+    padding-top: 10px ;
+    top: auto;
+    align-self: center;
+}
+
+
+
+@media only screen and (min-width: 950px) {
+    
+    .sidebar-container-sub {
+        position: fixed;
+        max-width: 275px;
+        background-color: #0C0C0C;
+        width: 95%;
+        min-height: 100vh;
+        height: 100%;
+        overflow-y: auto;
+    }
+    
+    .sidebar-description {
+        
+        padding-bottom: 0;
+        
+        &-name {
+            font-size: 20px;
+        }
+        
+        &-intro {
+            display: flex;
+        }
+    }
+    
+    .copyright {
+        display: flex;
+    }
+}
