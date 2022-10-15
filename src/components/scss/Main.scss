@@ -1,0 +1,244 @@
+.main-container-sub {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: url("../images/code background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+    &-sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+        height: 100%;
+        width: 100%;
+    }
+    
+    &:focus {
+        outline: 1px;
+    }
+}
+
+.content-container {
+    
+    display: flex;
+    flex-direction: column;    
+    background-color: rgb(12, 12, 12, 95%);
+    padding: 30px 30px;
+    width: 80%;
+    margin: 30px 0;
+    padding: 30px 20px;
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 30px;        
+    }
+    
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    
+    li {
+        text-align: center;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    &-3 {
+        padding: 30px 0;
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.project {
+    
+    &-caption {
+    
+        p {
+            padding: 30px 10px;
+            margin-bottom: -2rem;
+            font-size: 0.65rem;
+            line-height: 15px;
+            background-color: rgb(0, 0, 0, 60%);
+        }
+            
+        &-link {
+            font-size: 0.65rem;
+            text-decoration: none;                
+        }
+           
+    }
+}
+
+
+
+@media only screen and (min-width: 400px) {
+
+    .content-container { 
+        
+        margin: 30px 0;
+        padding: 30px 30px;
+    
+        h1 {
+            font-size: 35px;
+            margin-bottom: 30px;        
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        
+        li {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    
+    .project-caption-link {
+        font-size: 0.8rem;
+        text-decoration: none;        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .content-container { 
+        
+        margin: 30px 0;
+        padding: 30px 45px;
+    
+        h1 {
+            font-size: 45px;
+            margin-bottom: 35px;        
+        }
+        
+        p {
+            font-size: 20px;
+            line-height: 35px;
+        }
+        
+        li {
+            font-size: 20px;
+            line-height: 35px;
+        }
+ 
+    } 
+    
+    .project-caption-link {
+        font-size: 0.95rem;
+        text-decoration: none;        
+    }
+}
+
+
+@media only screen and (min-width: 950px) {
+    
+    .main-container-sub {
+        display: relative;
+        max-width: calc(100% - 275px);
+        margin-left: 275px;
+        height: 100%;
+    }
+    
+    .main-content {
+        
+        height: 100%;
+        position: relative;
+        display: flex;
+
+        &-sub {
+            
+            height: 100%;
+            min-height: 100vh;
+            scroll-snap-align: start;
+        }
+        
+        
+    }
+    
+    .content-container {
+        display: flex;
+        height: 76vh;
+        min-height: 600px;
+        max-height: 600px;
+        max-width: 1200px;
+        overflow-wrap: break-word;
+        overflow-y: auto;
+        font-size: 50px;
+        align-items: center;
+        
+        h1 {
+            font-size: 50px;
+            margin-bottom: 40px;        
+        }
+        
+        p {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        
+        ul {    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+            
+        li {
+            text-align: center;            
+            flex-basis: 50%;
+            font-size: 25px;
+            line-height: 50px;
+        }
+        
+             
+    }
+    
+    .project {
+    
+        &-caption {
+        
+            p {
+                margin-bottom: -2.25rem;
+                font-size: 30px;
+            }
+                
+            &-link {
+                font-size: 20px;
+            }
+               
+        }
+    }    
+ 
+}
